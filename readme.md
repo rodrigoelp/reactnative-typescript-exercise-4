@@ -53,3 +53,22 @@ Now, configuring this library with your project is not as easy as `react-navigat
 A comprehensive description is found here: [iOS installation](https://wix.github.io/react-native-navigation/#/installation-ios) and here [Android installation](https://wix.github.io/react-native-navigation/#/installation-android)
 
 **This made me consider that I need to spend some time understanding how to create these type definition files and how easy it will be to write it myself.**
+
+## I want to play with this code
+
+Here is a script you could use to set you up (written for terminal/osx).
+
+```sh
+# Cloning the repo to 'todos'
+git clone git@github.com:rodrigoelp/reactnative-typescript-exercise-4.git navscreen
+# Changing directory
+cd navscreen/
+# Installing dependencies
+yarn # if you have not installed yarn, then change it to: npm install
+# Compiling the typescript code
+./node_modules/.bin/tsc
+# Launching the react-native development server
+open -a Terminal "`react-native start`"
+# Compiling the code for ios and deploying it to the simulator
+react-native run-ios # optionally, type: react-native run-android
+```
